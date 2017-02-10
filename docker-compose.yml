@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+
+  squid:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: squid
+    container_name: squid
+    ports:
+      - 3128:3128
+      - 3130:3130
